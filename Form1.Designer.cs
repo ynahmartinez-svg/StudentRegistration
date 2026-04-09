@@ -48,6 +48,9 @@
             comboBox1 = new ComboBox();
             groupBox1 = new GroupBox();
             radioButton1 = new RadioButton();
+            groupBox2 = new GroupBox();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // lblStudentRegform
@@ -249,11 +252,30 @@
             radioButton1.Text = "radioButton1";
             radioButton1.UseVisualStyleBackColor = true;
             // 
+            // groupBox2
+            // 
+            groupBox2.Location = new Point(581, 352);
+            groupBox2.Name = "groupBox2";
+            groupBox2.Size = new Size(95, 42);
+            groupBox2.TabIndex = 20;
+            groupBox2.TabStop = false;
+            groupBox2.Text = "groupBox2";
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.Location = new Point(682, 77);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(52, 72);
+            pictureBox1.TabIndex = 21;
+            pictureBox1.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(pictureBox1);
+            Controls.Add(groupBox2);
             Controls.Add(radioButton1);
             Controls.Add(groupBox1);
             Controls.Add(comboBox1);
@@ -277,6 +299,7 @@
             Name = "Form1";
             Text = "Student Registration";
             Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -303,5 +326,7 @@
         private ComboBox comboBox1;
         private GroupBox groupBox1;
         private RadioButton radioButton1;
+        private GroupBox groupBox2;
+        private PictureBox pictureBox1;
     }
 }
