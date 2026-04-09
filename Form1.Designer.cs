@@ -46,6 +46,7 @@
             label2 = new Label();
             cbProgram = new ComboBox();
             comboBox1 = new ComboBox();
+            groupBox1 = new GroupBox();
             SuspendLayout();
             // 
             // lblStudentRegform
@@ -227,11 +228,21 @@
             comboBox1.Size = new Size(151, 28);
             comboBox1.TabIndex = 17;
             // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(418, 190);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(250, 125);
+            groupBox1.TabIndex = 18;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(groupBox1);
             Controls.Add(comboBox1);
             Controls.Add(cbProgram);
             Controls.Add(label2);
@@ -252,6 +263,7 @@
             Controls.Add(lblStudentRegform);
             Name = "Form1";
             Text = "Student Registration";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -276,5 +288,6 @@
         private Label label2;
         private ComboBox cbProgram;
         private ComboBox comboBox1;
+        private GroupBox groupBox1;
     }
 }
