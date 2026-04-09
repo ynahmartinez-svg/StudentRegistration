@@ -45,6 +45,7 @@
             btnStudentReg = new Button();
             label2 = new Label();
             cbProgram = new ComboBox();
+            comboBox1 = new ComboBox();
             SuspendLayout();
             // 
             // lblStudentRegform
@@ -218,11 +219,20 @@
             cbProgram.TabIndex = 16;
             cbProgram.Text = "-Select-";
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(450, 94);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 17;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(comboBox1);
             Controls.Add(cbProgram);
             Controls.Add(label2);
             Controls.Add(btnStudentReg);
@@ -265,5 +275,6 @@
         private Button btnStudentReg;
         private Label label2;
         private ComboBox cbProgram;
+        private ComboBox comboBox1;
     }
 }
