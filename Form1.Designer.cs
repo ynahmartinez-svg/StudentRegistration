@@ -45,6 +45,9 @@
             btnStudentReg = new Button();
             label2 = new Label();
             cbProgram = new ComboBox();
+            comboBox1 = new ComboBox();
+            groupBox1 = new GroupBox();
+            radioButton1 = new RadioButton();
             SuspendLayout();
             // 
             // lblStudentRegform
@@ -218,11 +221,42 @@
             cbProgram.TabIndex = 16;
             cbProgram.Text = "-Select-";
             // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled = true;
+            comboBox1.Location = new Point(450, 94);
+            comboBox1.Name = "comboBox1";
+            comboBox1.Size = new Size(151, 28);
+            comboBox1.TabIndex = 17;
+            // 
+            // groupBox1
+            // 
+            groupBox1.Location = new Point(418, 190);
+            groupBox1.Name = "groupBox1";
+            groupBox1.Size = new Size(250, 125);
+            groupBox1.TabIndex = 18;
+            groupBox1.TabStop = false;
+            groupBox1.Text = "groupBox1";
+            // 
+            // radioButton1
+            // 
+            radioButton1.AutoSize = true;
+            radioButton1.Location = new Point(392, 344);
+            radioButton1.Name = "radioButton1";
+            radioButton1.Size = new Size(117, 24);
+            radioButton1.TabIndex = 19;
+            radioButton1.TabStop = true;
+            radioButton1.Text = "radioButton1";
+            radioButton1.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(radioButton1);
+            Controls.Add(groupBox1);
+            Controls.Add(comboBox1);
             Controls.Add(cbProgram);
             Controls.Add(label2);
             Controls.Add(btnStudentReg);
@@ -242,6 +276,7 @@
             Controls.Add(lblStudentRegform);
             Name = "Form1";
             Text = "Student Registration";
+            Load += Form1_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -265,5 +300,8 @@
         private Button btnStudentReg;
         private Label label2;
         private ComboBox cbProgram;
+        private ComboBox comboBox1;
+        private GroupBox groupBox1;
+        private RadioButton radioButton1;
     }
 }
