@@ -50,6 +50,7 @@
             radioButton1 = new RadioButton();
             groupBox2 = new GroupBox();
             pictureBox1 = new PictureBox();
+            listBox1 = new ListBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -269,11 +270,20 @@
             pictureBox1.TabIndex = 21;
             pictureBox1.TabStop = false;
             // 
+            // listBox1
+            // 
+            listBox1.FormattingEnabled = true;
+            listBox1.Location = new Point(689, 207);
+            listBox1.Name = "listBox1";
+            listBox1.Size = new Size(51, 124);
+            listBox1.TabIndex = 22;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(listBox1);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox2);
             Controls.Add(radioButton1);
@@ -328,5 +338,6 @@
         private RadioButton radioButton1;
         private GroupBox groupBox2;
         private PictureBox pictureBox1;
+        private ListBox listBox1;
     }
 }
