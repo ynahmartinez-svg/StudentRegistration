@@ -8,14 +8,14 @@ namespace StudentRegistration
         {
             InitializeComponent();
         }
-              private void label6_Click(object sender, EventArgs e)
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }
 
         private void btnreg_Click(object sender, EventArgs e)
         {
-            for (int day = 1; day <= 31; day++) 
+            for (int day = 1; day <= 31; day++)
             {
                 cbDay.Items.Add(day);
             }
@@ -24,13 +24,13 @@ namespace StudentRegistration
             "April", "May", "June", "July", "August", "September",
             "October", "November", "December"};
             foreach (string month in months)
-            { 
-            cbMonth.Items.Add(month);
+            {
+                cbMonth.Items.Add(month);
             }
 
-            for (int year = 1990; year <= 2026; year++) 
+            for (int year = 1990; year <= 2026; year++)
             {
-            cbYear.Items.Add(year); 
+                cbYear.Items.Add(year);
             }
 
             ArrayList programs = new ArrayList();
@@ -38,9 +38,9 @@ namespace StudentRegistration
             programs.Add("BS Information Technology");
             programs.Add("BS Information Systems");
             programs.Add("BS Computer Engineering");
-            foreach (string program in programs) 
+            foreach (string program in programs)
             {
-            cbProgram .Items.Add(program);
+                cbProgram.Items.Add(program);
             }
 
             string lastn = txtlastname.Text;
@@ -65,13 +65,18 @@ namespace StudentRegistration
             string Student = "Student name: " + firstn + " " + middlen + " " + lastn;
             string Gender = "Gender: " + gender;
             string Birth = "Date of birth: " + Day + " / " + Month + " / " + Year;
-            string Programs = "Program: " +   Program;
+            string Programs = "Program: " + Program;
             string infos = Student + "\n" + Gender + "\n" + Birth + "\n" + Programs;
             MessageBox.Show(infos);
 
         }
 
         private void lblStudentRegform_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

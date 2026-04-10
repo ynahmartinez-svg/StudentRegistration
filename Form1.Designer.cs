@@ -45,6 +45,10 @@
             btnStudentReg = new Button();
             label2 = new Label();
             cbProgram = new ComboBox();
+            label1 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // lblStudentRegform
@@ -218,11 +222,52 @@
             cbProgram.TabIndex = 16;
             cbProgram.Text = "-Select-";
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(398, 129);
+            label1.Name = "label1";
+            label1.Size = new Size(50, 20);
+            label1.TabIndex = 17;
+            label1.Text = "label1";
+            label1.Click += label1_Click;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(454, 129);
+            label3.Name = "label3";
+            label3.Size = new Size(50, 20);
+            label3.TabIndex = 18;
+            label3.Text = "label3";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(510, 129);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 20);
+            label4.TabIndex = 19;
+            label4.Text = "label4";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(398, 75);
+            label5.Name = "label5";
+            label5.Size = new Size(50, 20);
+            label5.TabIndex = 20;
+            label5.Text = "label5";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1018, 450);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label1);
             Controls.Add(cbProgram);
             Controls.Add(label2);
             Controls.Add(btnStudentReg);
@@ -265,5 +310,9 @@
         private Button btnStudentReg;
         private Label label2;
         private ComboBox cbProgram;
+        private Label label1;
+        private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }
